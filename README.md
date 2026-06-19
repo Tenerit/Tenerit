@@ -2,16 +2,12 @@
 
 # Tenerit
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=24&pause=900&color=8B5CF6&center=true&vCenter=true&width=620&lines=DevOps+engineer;I+ship+privacy-first+side+projects;Local-first+developer+tools+%E2%80%94+done+right" alt="DevOps engineer — I ship privacy-first side projects" />
+### DevOps engineer · I ship privacy-first developer tools
 
 <br/>
 
 Infra by day, side projects by night.<br/>
 I build small, sharp, **local-first developer tools** — and the occasional SaaS.
-
-<br/>
-
-![profile views](https://komarev.com/ghpvc/?username=Tenerit&color=8B5CF6&style=flat&label=visitors)
 
 </div>
 
@@ -34,7 +30,6 @@ cross-discipline trade-offs only you can settle.
 /plugin marketplace add Tenerit/boardroom
 ```
 
-![stars](https://img.shields.io/github/stars/Tenerit/boardroom?style=flat&logo=github&color=8B5CF6&labelColor=161b22)
 ![last commit](https://img.shields.io/github/last-commit/Tenerit/boardroom?style=flat&color=8B5CF6&labelColor=161b22)
 
 </td>
@@ -51,7 +46,6 @@ tokens. Zero network, zero deps.
 npx @tenerit/ccx cost
 ```
 
-![stars](https://img.shields.io/github/stars/Tenerit/ccx?style=flat&logo=github&color=34d399&labelColor=161b22)
 ![last commit](https://img.shields.io/github/last-commit/Tenerit/ccx?style=flat&color=34d399&labelColor=161b22)
 
 </td>
