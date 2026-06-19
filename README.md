@@ -9,6 +9,10 @@
 Infra by day, side projects by night.<br/>
 I build small, sharp, **local-first developer tools** — and the occasional SaaS.
 
+<br/>
+
+![profile views](https://komarev.com/ghpvc/?username=Tenerit&color=8B5CF6&style=flat&label=visitors)
+
 </div>
 
 ---
@@ -30,6 +34,9 @@ cross-discipline trade-offs only you can settle.
 /plugin marketplace add Tenerit/boardroom
 ```
 
+![stars](https://img.shields.io/github/stars/Tenerit/boardroom?style=flat&logo=github&color=8B5CF6&labelColor=161b22)
+![last commit](https://img.shields.io/github/last-commit/Tenerit/boardroom?style=flat&color=8B5CF6&labelColor=161b22)
+
 </td>
 <td width="50%" valign="top">
 
@@ -44,9 +51,43 @@ tokens. Zero network, zero deps.
 npx @tenerit/ccx cost
 ```
 
+![stars](https://img.shields.io/github/stars/Tenerit/ccx?style=flat&logo=github&color=34d399&labelColor=161b22)
+![last commit](https://img.shields.io/github/last-commit/Tenerit/ccx?style=flat&color=34d399&labelColor=161b22)
+
 </td>
 </tr>
 </table>
+
+<details>
+<summary>👀 <b>Peek at a real boardroom review</b> (click to expand)</summary>
+
+<br/>
+
+```
+# Boardroom review — acme-billing
+
+## Decision: NOT YET
+Core billing logic is solid, but a money-touching race condition and an
+unauthenticated webhook make this unsafe for paying customers. Two fixes gate it.
+
+## Decisions for you  (no single right answer — you choose)
+- Hit the announced EU launch date vs add idempotency first.
+  Product wants the date; SRE + Security show the retry path can double-bill.
+  → What resolves it: slip one week, or gate EU behind a flag until it lands?
+
+## Scorecard
+| Hat       | Score | Verdict                          |
+| Security  | 4/10  | unauth webhook + a secret in repo|
+| SRE       | 5/10  | charge retry can double-bill     |
+| Architect | 7/10  | clean; slight over-abstraction   |
+| Product   | 7/10  | sharp ICP, tight scope           |
+
+## Top risks
+1. 🔴 Unauthenticated webhook → forged payment events  (src/webhooks/stripe.ts:34)
+2. 🔴 Charge retry double-bills on timeout            (src/billing/charge.ts:88)
+```
+
+</details>
 
 ---
 
