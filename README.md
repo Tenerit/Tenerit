@@ -13,20 +13,6 @@ I build small, sharp, **local-first developer tools** — and the occasional Saa
 
 ---
 
-## 🧰 Stack
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-FF4438?style=for-the-badge&logo=redis&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
-![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white)
-
----
-
 ## 🚀 Featured projects
 
 <table>
@@ -40,7 +26,9 @@ A whole-project **review board** for Claude Code. A panel of expert hats reviews
 your project in parallel and hands you a **GO/NO-GO decision** plus the
 cross-discipline trade-offs only you can settle.
 
-`Claude Code plugin` · `read-only` · `MIT`
+```
+/plugin marketplace add Tenerit/boardroom
+```
 
 </td>
 <td width="50%" valign="top">
@@ -52,7 +40,9 @@ cross-discipline trade-offs only you can settle.
 Claude Code already writes. See what your sessions cost and what quietly burned
 tokens. Zero network, zero deps.
 
-`CLI` · `Node/TS` · `MIT`
+```
+npx @tenerit/ccx cost
+```
 
 </td>
 </tr>
@@ -62,10 +52,9 @@ tokens. Zero network, zero deps.
 
 ## 🧪 Also building
 
-| Project | What it is |
-| --- | --- |
-| **CronGuard** | Self-hosted cron-job monitoring with **local-LLM root-cause analysis** — detects misses, duration drift, and failures, then explains *why* and who to wake. No logs leave your server. |
-| **recevable** | Invoicing & accounts-receivable tracking for freelancers and small teams. *(in progress)* |
+**CronGuard** — self-hosted cron-job monitoring with **local-LLM root-cause
+analysis**. Detects misses, duration drift, and failures, then explains *why* and
+who to wake. No logs leave your server.
 
 ---
 
@@ -77,9 +66,13 @@ tokens. Zero network, zero deps.
 
 ---
 
-<div align="center">
+## 🧰 Stack
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Tenerit&show_icons=true&hide_border=true&count_private=true&theme=tokyonight" alt="Tenerit's GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tenerit&layout=compact&hide_border=true&theme=tokyonight" alt="Top languages" />
-
-</div>
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-FF4438?style=for-the-badge&logo=redis&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
