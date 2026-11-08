@@ -35,11 +35,7 @@ never "in place" without proof, human sign-off before export. *In development.*
 
 ## 🧰 Open source
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://github.com/Tenerit/boardroom"><img src="https://raw.githubusercontent.com/Tenerit/boardroom/master/assets/social-preview.png" alt="boardroom" /></a>
+<a href="https://github.com/Tenerit/boardroom"><img src="https://raw.githubusercontent.com/Tenerit/boardroom/master/assets/social-preview.png" alt="boardroom" width="600" /></a>
 
 ### 🪑 [boardroom](https://github.com/Tenerit/boardroom)
 A whole-project **review board** for Claude Code. Expert hats (architect, security,
@@ -51,26 +47,6 @@ SRE, product, investor, skeptic…) review your project in parallel and hand you
 ```
 
 ![last commit](https://img.shields.io/github/last-commit/Tenerit/boardroom?style=flat&color=8B5CF6&labelColor=161b22)
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/Tenerit/ccx"><img src="https://raw.githubusercontent.com/Tenerit/ccx/master/assets/social-preview.png" alt="ccx" /></a>
-
-### 🩻 [ccx](https://github.com/Tenerit/ccx)
-**Claude Code X-Ray** — cross-session cost & token-waste analytics from the logs
-Claude Code already writes. See what your sessions cost and what quietly burned
-tokens. Zero network, zero deps.
-
-```
-npx @tenerit/ccx cost
-```
-
-![last commit](https://img.shields.io/github/last-commit/Tenerit/ccx?style=flat&color=34d399&labelColor=161b22)
-
-</td>
-</tr>
-</table>
 
 ---
 
