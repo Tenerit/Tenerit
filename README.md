@@ -2,45 +2,54 @@
 
 # Tenerit
 
-### I build local-first AI products · your data stays on your machine
+### DevOps engineer · I build self-hosted ops tools with local AI
 
 <br/>
 
-DevOps engineer turned product builder, based in France.<br/>
-Small LLMs, **bounded and measured**, running where the data already lives —<br/>
-for trades, regulated teams and developers who can't ship their data to a cloud.
+Your logs are sensitive. Your jobs are critical. Your AI should run **on your servers**.<br/>
+I build monitoring tools for ops teams in **regulated and air-gapped** environments —<br/>
+where nothing is allowed to leave the infra.
 
 </div>
 
 ---
 
-## 🔨 Building now
+## 🛡️ CronGuard — cron monitoring that tells you *why* it broke
 
-**HVAC-Flow** — the assistant for heating & cooling technicians. Dictate the job on
-site, get the report, the quote and the invoice. Voice-first, phone-first, installed on
-the company's own machine. Issues **Factur-X / EN 16931** e-invoices (ready for the
-2027 French mandate), chases unpaid invoices, reminds clients of their yearly
-maintenance. Local Whisper dictation + local TTS, one LLM call per job, cached.
-*Private — looking for pilot companies.*
+Your nightly backup fails. Here is what each tool tells you:
 
-**CronGuard** — self-hosted cron-job monitoring with **local-LLM root-cause analysis**.
-Detects misses, duration drift and failures, then explains *why* and who to wake.
-No logs leave your server. *Private beta.*
+> **A classic monitor:**
+> 🔴 `backup is DOWN`
 
-**Recevable** — pre-fills the security questionnaires (NIS2 · ISO 27001 · DORA) that
-big clients send to small IT suppliers. Answers grounded in your real practices,
-never "in place" without proof, human sign-off before export. *In development.*
+> **CronGuard:**
+> 🔴 `backup failed (exit 1) — severity: critical`
+> **Cause:** disk full
+> **Lead to verify:** grow the disk or move the backup target to a larger volume
+
+One alert is a notification. The other is a head start on the diagnosis.
+
+- ⏰ **Cron-aware detection** — missed, late, hung, failed, and *duration drift*
+- 🧠 **Local-LLM root cause** — reads the logs, gives cause, fix and prevention · runs on Ollama, **no log egress**
+- 🔁 **Incident memory** — recognises a failure it has already seen and what fixed it last time
+- 🔌 **Air-gap ready** — offline bundle with checksums, one container, no network needed
+- 📈 **Ops-native** — Prometheus metrics + ready alert rules, dead-letter queue, automatic backups
+- 🧪 **Measured, not claimed** — eval harness with repeated runs and published error bars
+
+**For:** ops / SRE / data teams whose critical crons (backups, ETL, billing sync) can't ship
+logs to a third-party SaaS.
+
+> 🤝 **Looking for design partners** — if you run critical cron jobs in a regulated or
+> air-gapped environment, I'd love to hear how you monitor them today.
 
 ---
 
-## 🧰 Open source
-
-<a href="https://github.com/Tenerit/boardroom"><img src="https://raw.githubusercontent.com/Tenerit/boardroom/master/assets/social-preview.png" alt="boardroom" width="600" /></a>
+## 🧰 Also from me
 
 ### 🪑 [boardroom](https://github.com/Tenerit/boardroom)
 A whole-project **review board** for Claude Code. Expert hats (architect, security,
 SRE, product, investor, skeptic…) review your project in parallel and hand you a
-**GO/NO-GO decision** plus the trade-offs only you can settle.
+**GO/NO-GO decision** plus the trade-offs only you can settle. Built to review CronGuard
+before shipping it.
 
 ```
 /plugin marketplace add Tenerit/boardroom
@@ -53,21 +62,20 @@ SRE, product, investor, skeptic…) review your project in parallel and hand you
 ## 🧭 How I build
 
 - **Local first** — the model goes to the data, not the other way round
-- **Measured, not claimed** — eval harnesses, repeated runs, honest error bars
+- **Fail loud** — a missing ping is not "no problem"; silent degradation is the real enemy
+- **Measured, not claimed** — honest numbers, repeated runs, error bars
 - **Token-frugal** — cache recurring inputs, bound every prompt, one call where others make five
-- **Useful before complete** — tools that hand you a **decision**, not just data
 
 ---
 
 ## 🛠️ Stack
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-FF4438?style=for-the-badge&logo=redis&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
