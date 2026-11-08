@@ -44,6 +44,18 @@ logs to a third-party SaaS.
 
 ---
 
+## 🩺 [GitLab Doctor](https://github.com/Tenerit/gitlab-doctor) — same idea, for your CI pipelines
+
+Feed it a `.gitlab-ci.yml`, get back a **health score (0–100)**, prioritized findings
+(problem → impact → fix) and an optional **AI root-cause from a model on your own box**.
+Catches what CI Lint doesn't: volatile cache keys, `dependencies` ⊄ `needs`, `curl | bash`,
+`:latest` images, leaked debug traces — 16+ rules. Open source (MIT), air-gap ready.
+
+![stars](https://img.shields.io/github/stars/Tenerit/gitlab-doctor?style=flat&color=FC6D26&labelColor=161b22)
+![last commit](https://img.shields.io/github/last-commit/Tenerit/gitlab-doctor?style=flat&color=FC6D26&labelColor=161b22)
+
+---
+
 ## 🧰 Also from me
 
 ### 🪑 [boardroom](https://github.com/Tenerit/boardroom)
