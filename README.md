@@ -40,6 +40,7 @@ logs to a third-party SaaS.
 
 > 🤝 **Looking for design partners** — if you run critical cron jobs in a regulated or
 > air-gapped environment, I'd love to hear how you monitor them today.
+> **→ [Tell me about your setup](https://github.com/Tenerit/Tenerit/issues/new?title=CronGuard%20design%20partner&body=Team%20%2F%20sector%3A%0AHow%20many%20cron%20jobs%3A%0AHow%20you%20monitor%20them%20today%3A%0AAir-gapped%20or%20regulated%3F%3A)**
 
 ---
 
